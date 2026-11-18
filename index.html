@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gonzo Workbench — Deliverables</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #0b0e14; color: #d8dee9; font-family: -apple-system, 'SF Pro Text', 'Segoe UI', sans-serif; padding: 40px 24px 80px; }
+  .wrap { max-width: 1100px; margin: 0 auto; }
+  h1 { font-size: 28px; letter-spacing: 0.5px; color: #fff; }
+  h1 span { color: #ff9d2e; }
+  .sub { color: #8b93a3; margin: 8px 0 36px; font-size: 14px; }
+  h2 { font-size: 13px; text-transform: uppercase; letter-spacing: 2px; color: #6d7687; margin: 40px 0 14px; border-bottom: 1px solid #1c2230; padding-bottom: 8px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 16px; }
+  .card { background: #121826; border: 1px solid #1e2739; border-radius: 12px; padding: 18px 20px; display: block; text-decoration: none; color: inherit; transition: border-color .15s, transform .15s; }
+  .card:hover { border-color: #ff9d2e; transform: translateY(-2px); }
+  .card h3 { font-size: 16px; color: #fff; margin-bottom: 6px; }
+  .card p { font-size: 13px; color: #8b93a3; line-height: 1.5; }
+  .tag { display: inline-block; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; padding: 3px 8px; border-radius: 20px; margin-bottom: 10px; font-weight: 600; }
+  .tag.xlsx { background: #123c2a; color: #4ade80; }
+  .tag.live { background: #3b2a12; color: #ff9d2e; }
+  .tag.img { background: #1c2a4a; color: #7aa2f7; }
+  .tag.paused { background: #2a1a1a; color: #f87171; }
+  .meta { margin-top: 12px; font-size: 12px; color: #5b6474; }
+  footer { margin-top: 60px; color: #4a5261; font-size: 12px; border-top: 1px solid #1c2230; padding-top: 16px; }
+  a.inline { color: #ff9d2e; text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>GONZO <span>WORKBENCH</span></h1>
+  <p class="sub">Deliverables &amp; live artifacts — built November 2026 · all files hosted in this repo · updated <span id="date"></span></p>
+
+  <h2>Spreadsheets — research &amp; sourcing</h2>
+  <div class="grid">
+    <a class="card" href="2026_Aston_Martin_Vantage_S_Black_Wheels.xlsx" download>
+      <span class="tag xlsx">xlsx</span>
+      <h3>2026 Aston Martin Vantage S — Black Wheels</h3>
+      <p>Nationwide new/stock search across the Aston Martin retail platform (780 vehicles swept) + 13 US dealers. 3 confirmed matches at Aston Martin Houston (photo-verified black wheel coupes) + 1 probable in Scottsdale. Rejected roadsters documented with reasons.</p>
+      <p class="meta">Houston trio: $243.5k / $267k / $245.8k — all coupes, black Y-spoke forged wheels</p>
+    </a>
+    <a class="card" href="IMSA_Teams_Cars_Hiring.xlsx" download>
+      <span class="tag xlsx">xlsx</span>
+      <h3>IMSA Teams &amp; Cars + Hiring Signals</h3>
+      <p>131 team/car entries from the 2026 season with social links and team websites. Hiring-signal sweep found a live "IMSA Mechanic" posting at Rahal Letterman Lanigan (Oct 27) plus open application calls at Conquest Racing and Multimatic.</p>
+      <p class="meta">95 rows · 73 team orgs · hiring signals ranked</p>
+    </a>
+    <a class="card" href="Arizona_Racing_Teams_Jobs_Volunteer.xlsx" download>
+      <span class="tag xlsx">xlsx</span>
+      <h3>Arizona Racing — Teams, Jobs &amp; Volunteer Doors</h3>
+      <p>Full Arizona motorsports map for a mechanic seeking part-time/volunteer crew work: 8 venues, 12 upcoming events, volunteer paths (AZ SCCA tech inspection), AZ-based teams incl. Flying Lizard (Phoenix), and live paid openings at Radford, Firebird, Lonestar, Haus of Euro.</p>
+      <p class="meta">5 tabs · venues · events · volunteer doors · live jobs</p>
+    </a>
+  </div>
+
+  <h2>Live pages</h2>
+  <div class="grid">
+    <a class="card" href="https://gonzoidbot-alt.github.io/ivr-earthwork-3d/v2/">
+      <span class="tag live">live site</span>
+      <h3>Earthwork 3D v2 — Exploded Assembly</h3>
+      <p>Diamond Heights subdivision on an interactive turntable: existing ground lifts, road structure separates into subgrade/base/pavement, utilities drop into trenches, retaining wall rises — then reassembles to final grade. Built with a render-compare-fix loop that caught three geometry bugs in the v1 build.</p>
+      <p class="meta">gonzoidbot-alt.github.io/ivr-earthwork-3d/v2/</p>
+    </a>
+    <a class="card" href="https://gonzoidbot-alt.github.io/kohai-creative-stills/">
+      <span class="tag live">live site</span>
+      <h3>Kōhai Creative Board</h3>
+      <p>The Kōhai ad creative review board — pipeline videos, stills with Jev-scored evaluations, status chips and leaderboard.</p>
+      <p class="meta">gonzoidbot-alt.github.io/kohai-creative-stills/</p>
+    </a>
+  </div>
+
+  <h2>Imagery</h2>
+  <div class="grid">
+    <a class="card" href="alvarado_roof_measurement.png">
+      <span class="tag img">measurement</span>
+      <h3>2008 W Alvarado Rd — Roof Takeoff</h3>
+      <p>Roof measured from 2026 county ortho imagery (0.152 ft/px): main roof ~2,190 sqft (hip, low-slope foam), patio ~390, shed ~150 — ~28 squares total, with ordering math for foam recoat vs shingle conversion annotated.</p>
+      <p class="meta">annotated ortho overlay · 2026 Maricopa aerial</p>
+    </a>
+  </div>
+
+  <h2>Autonomous desks (status)</h2>
+  <div class="grid">
+    <div class="card">
+      <span class="tag paused">killed 11-04</span>
+      <h3>Polymarket Live Desk</h3>
+      <p>Real-dollar BTC 5-min Up/Down desk on Polymarket US: multi-asset (BTC/ETH/SOL/XRP, 5m+15m), book-priced execution, profit-taking exits, Kelly-scaled sizing, full audit trail. Final: $250 in → $250 out, 2 IOC orders unfilled, zero loss. Scripts + 837-record journal preserved on disk.</p>
+      <p class="meta">audit found &amp; fixed a ledger double-credit bug before it mattered</p>
+    </div>
+    <div class="card">
+      <span class="tag paused">retired 11-04</span>
+      <h3>PUMPDESK — pump.fun shadow loop</h3>
+      <p>Paper-only funnel (GeckoTerminal → arithmetic kills → Solana RPC checks → Venice judge → code gate). Retired before first fill; waiting-queue fix shipped so it can resume anytime.</p>
+      <p class="meta">5,128 launches scanned · journal preserved</p>
+    </div>
+    <div class="card">
+      <span class="tag paused">retired 11-04</span>
+      <h3>Polymarket Paper Bankroll</h3>
+      <p>$250 paper start → $1,877.40 corrected final (+651%), 13/13 verified wins at ~68¢ avg entry. The audit's independent P&amp;L reconstruction caught a ledger bug that had inflated it to $5,711 — corrected before the live run inherited it.</p>
+      <p class="meta">306 windows evaluated · 3 pre-bankroll + 10 bankroll wins</p>
+    </div>
+  </div>
+
+  <footer>gonzo workbench · artifacts built by <a class="inline" href="https://github.com/gonzoidbot-alt">gonzoidbot-alt</a> · spreadsheets are point-in-time snapshots — inventory &amp; job listings change daily</footer>
+</div>
+<script>document.getElementById('date').textContent = new Date().toLocaleDateString('en-US', {year:'numeric', month:'long', day:'numeric'});</script>
+</body>
+</html>
